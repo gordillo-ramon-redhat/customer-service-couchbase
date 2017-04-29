@@ -1,0 +1,24 @@
+server:
+  port: 8080
+spring:
+  main:
+    banner-mode: 'off'
+  mvc:
+    favicon:
+      enabled: false
+    jmx:
+      enabled: true
+  data:
+    couchbase:
+      auto-index: true
+  couchbase:
+    bootstrap-hosts: localhost
+    env:
+      timeouts:
+        connect: 10000
+        socket-connect: 10000
+springfox:
+  documentation:
+    swagger:
+      v2:
+        path: /v2/api-docs
